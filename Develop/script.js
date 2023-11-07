@@ -37,7 +37,7 @@ function generatePassword () {
     } 
     
   }
-}
+
 
 if (SizeOfPassword >= 8 || SizeOfPassword <= 128) {
   acceptUppercase = confirm("Would you like uppercase characters to be in your password?")
@@ -145,7 +145,11 @@ for (var i = 0; i < SizeOfPassword; i++) {
     var totalSelected = selected[Math.floor(Math.random() * selected.length)];
   
   emptyArray.push(totalSelected)
+  
 }
 
+var newGeneratedPassword = emptyArray.join("");
 
+return newGeneratedPassword;
 
+}
