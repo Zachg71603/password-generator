@@ -83,5 +83,36 @@ else if (acceptLowercase = true & acceptUppercase === true & acceptSpecialChar =
   
 } 
 
+//if user selects 3/4 character types
+
+else if (acceptLowercase = true & acceptUppercase === true) {
+  selected = lowerCaseLtr.concat (upperCaseLtr);
+  
+} 
+
+else if (acceptLowercase = true & acceptSpecialChar === true) {
+  selected = specialChar.concat (lowerCaseLtr);
+  
+} 
+
+else if (acceptUppercase === true & acceptSpecialChar === true) {
+  selected = specialChar.concat (upperCaseLtr);
+  
+} 
+
+else if (acceptNumericValue === true & acceptSpecialChar === true) {
+  selected = number.concat (specialChar);
+  
+} 
+
+else if (acceptNumericValue === true & acceptLowercase === true) {
+  selected = number.concat (lowerCaseLtr);
+  
+} 
+
+else if (acceptNumericValue === true & acceptUppercase === true) {
+  selected = number.concat (upperCaseLtr);
+  
+} 
 
 
