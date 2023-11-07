@@ -57,9 +57,31 @@ for (var i = 0; i < number.length; i++) {
   
 }
 
+//if user selects 3/4 character types
 if (acceptLowercase = true & acceptUppercase === true & acceptNumericValue === true & acceptSpecialChar === true ) {
   selected = number.concat (lowerCaseLtr, upperCaseLtr, specialChar);
   
 } 
+
+else if (acceptLowercase = true & acceptUppercase === true & acceptNumericValue === true) {
+  selected = number.concat (lowerCaseLtr, upperCaseLtr);
+  
+} 
+
+else if (acceptSpecialChar = true & acceptUppercase === true & acceptNumericValue === true) {
+  selected = number.concat (lowerCaseLtr, specialChar);
+  
+} 
+
+else if (acceptSpecialChar = true & acceptUppercase === true & acceptNumericValue === true) {
+  selected = number.concat (specialChar, upperCaseLtr);
+  
+} 
+
+else if (acceptLowercase = true & acceptUppercase === true & acceptSpecialChar === true) {
+  selected = number.concat (lowerCaseLtr, upperCaseLtr);
+  
+} 
+
 
 
