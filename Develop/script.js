@@ -38,3 +38,10 @@ function generatePassword () {
     
   }
 }
+
+if (SizeOfPassword >= 8 || SizeOfPassword <= 128) {
+  acceptUppercase = confirm("Would you like uppercase characters to be in your password?")
+  acceptLowercase = confirm("Would you like lowercase characters to be in your password?")
+  acceptSpecialChar = confirm("Would you like special characters to be in your password?")
+  acceptNumericValue = confirm("Would you like numeric characters to be in your password?")
+}
