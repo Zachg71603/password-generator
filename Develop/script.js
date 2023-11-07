@@ -26,7 +26,7 @@ var acceptLowercase;
 var acceptNumericValue;
 var acceptSpecialChar;
 var selected;
-
+//initalizing a function to geerate password based off the users selections
 function generatePassword () {
   SizeOfPassword = prompt("Hello! What length would you like your password to be? (Between 8-128 characters)")
 
@@ -45,6 +45,7 @@ if (SizeOfPassword >= 8 || SizeOfPassword <= 128) {
   acceptSpecialChar = confirm("Would you like special characters to be in your password?")
   acceptNumericValue = confirm("Would you like numeric characters to be in your password?")
 }
+// If value is outside the 8-128 range, the prompt will reappear until a value within that range is inputted
 
 for (var i = 0; i < number.length; i++) {
   if (acceptLowercase === false && acceptUppercase === false && acceptNumericValue === false && acceptSpecialChar === false ) {
@@ -137,13 +138,13 @@ else if (acceptLowercase === true) {
   
 }
 
-
+//setting up array to return a generated password
 var emptyArray = [];
 
 for (var i = 0; i < SizeOfPassword; i++) {
   
     var totalSelected = selected[Math.floor(Math.random() * selected.length)];
-  
+  // pushing randomized values saved from "totalSelected" and initalized them into the "emptyArray" array
   emptyArray.push(totalSelected)
   
 }
