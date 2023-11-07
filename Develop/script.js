@@ -26,3 +26,15 @@ var acceptLowercase;
 var acceptNumericValue;
 var acceptSpecialChar;
 var selected;
+
+function generatePassword () {
+  SizeOfPassword = prompt("Hello! What length would you like your password to be? (Between 8-128 characters)")
+
+
+  for (var i = 0; i < number.length; i++) {
+    if (SizeOfPassword < 8 || SizeOfPassword > 128 ) {
+      SizeOfPassword = prompt ("Please try again. Enter a value between 8 and 128.");
+    } 
+    
+  }
+}
