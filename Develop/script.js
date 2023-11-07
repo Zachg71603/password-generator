@@ -45,3 +45,14 @@ if (SizeOfPassword >= 8 || SizeOfPassword <= 128) {
   acceptSpecialChar = confirm("Would you like special characters to be in your password?")
   acceptNumericValue = confirm("Would you like numeric characters to be in your password?")
 }
+
+for (var i = 0; i < number.length; i++) {
+  if (acceptLowercase = false & acceptUppercase = false & acceptNumericValue = false & acceptSpecialChar = false ) {
+    selected = alert ("You must select atleast one characcter type.");
+    acceptUppercase = confirm("Would you like uppercase characters to be in your password?")
+    acceptLowercase = confirm("Would you like lowercase characters to be in your password?")
+    acceptSpecialChar = confirm("Would you like special characters to be in your password?")
+    acceptNumericValue = confirm("Would you like numeric characters to be in your password?")
+  } 
+  
+}
