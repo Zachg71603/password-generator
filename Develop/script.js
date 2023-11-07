@@ -115,4 +115,29 @@ else if (acceptNumericValue === true & acceptUppercase === true) {
   
 } 
 
+//if user selects 1/4 character types
+
+else if (acceptNumericValue === true) {
+  selected = number;
+  
+} 
+
+else if (acceptSpecialChar === true) {
+  selected = specialChar;
+  
+} 
+
+else if (acceptUppercase === true) {
+  selected = upperCaseLtr;
+  
+} 
+
+else if (acceptLowercase === true) {
+  selected = lowerCaseLtr;
+  
+}
+
+
+
+
 
